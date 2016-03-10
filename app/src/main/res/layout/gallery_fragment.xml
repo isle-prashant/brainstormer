@@ -1,0 +1,48 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#000"
+    android:fitsSystemWindows="true"
+
+    tools:context="com.daimajia.slider.demo.MainActivity1">
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+
+            android:layout_width="match_parent"
+            custom:pager_animation="DepthPage"
+            custom:auto_cycle="false"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitXY"
+            custom:indicator_visibility="invisible"
+            custom:pager_animation_span="1100"
+            android:layout_above="@+id/ctext"
+            android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:layout_width="340dp"
+        android:layout_height="match_parent"
+        android:id="@+id/ignored_view"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/ctext"
+        android:text="© Brainstormer 2015"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

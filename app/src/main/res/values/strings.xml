@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Brainstormer 15</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="main">\"Brainstormer has seen a surge in the number of enthusiastic participants
+					every year, with students from schools and colleges participating from all
+					West Bengal. Last year Mr. Barry \'o Brien, revered as a flamboyant
+					quiz master with international stature, was the quiz master of the event and
+					101 teams participated in the event.This year its going to be Bigger and Better! so keep looking!\"</string>
+    <string name="about_clg1">Netaji Subhash Engineering College or NSEC is an engineering college of eastern India located in Kolkata, West Bengal, India. It ranks as one of the top engineering colleges in the state of West Bengal.The college was established in 1998. It is situated at Techno City, Panchpota, Garia in the southern part of Kolkata.</string>
+    <string name="about_ph">Phoenix is the official Tech Club of NSEC responsible for handling all the tech events happening in the college like Brainstormer , Aavahan and Avenir. Phoenix has several teams like Web,Creative,PR,etc. Every student of NSEC is officially a member of phoenix.</string>
+    <string name="apprules">1. Everyone who is eligible for Brainstormer can participate in it.\n\n2. Each participant can only participate once in it, through there registered Email ID.\n\n3. You must register yourself in Brainstormer in order to participate here. You can do so in the Registration section of the app or through our website.\n\n4. This round is totally free.There is no participation charge.\n\n5. This round is open now and will close on 11th September,2015 by 11:59AM. The Results will be declared soon after that. You can check your rank in the same section by entering your registered Email Id.\n\n6. The winners of this round will be rewarded accordingly.\n\n7**. You need to be connected to Internet for participating in it. This will be a 3 minutes round. You can even submit your answer before this given time. You will be rewarded +1 for each correct answer and -0.5 for each wrong one. </string>
+
+    <string name="manishbhaiyaswords">Brainstormer is one among the most amazing events conducted by any college in North-east India. In the quiz genre, it is the biggest.
+It is conducted every year by PHOENIX, official tech-club of NETAJI SUBHASH ENGINEERING COLLEGE.\nThe quiz master (2k14) was MR. BARRY O\' BRIEN, a politician ,spokesperson,philanthropist and an awesome personality conducting quiz for more than three decades.
+last year we set a milestone of over 150+ teams that registered in the quiz event.\nWe PHOENIXians feel elated and overwhelmed on the response that we get every year from the students of colleges and schools.\nWe collaborated with the NGO\'S such as CRY foundation and PARIPURNATA , and we love to donate the funds raised by us.\nSo last but not the least everyone should participate and make it an awesome event afterall the winners are rewarded heavily :)\n</string>
+    <string name="about_dev">Prashant Kumar\nContact- +91-7278731243\nFacebook  - facebook.com/Prashantkishor.kumar</string>
+
+    <string name="about_contacts">Ankit Krishna : +91 - 8969808842
+    \nAshish Ranjan : +91 - 8013904843
+    \nDebrupa Gupta : +91 - 9836302003
+    \nSanchari Chakraborty : +91 - 9903395233
+    \nSudhanshu Singh : +91 - 9883685617</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+<string name="google_maps_key">AIzaSyDZyNOYryvcFNtkiyfElBAMAI8clmB3McI</string>
+    <string name="title_activity_fullscreen_activity1">FullscreenActivity1</string>
+    <string name="ip">phoenixnsec.com/brainstormer/pvt/appdata/data/</string>
+    <string name="title_activity_maps">Map</string>
+
+
+
+
+
+
+</resources>

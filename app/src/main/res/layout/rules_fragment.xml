@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#FFECB3"
+    android:scrollbars="none">
+<RelativeLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rules:"
+            android:padding="15dp"
+            android:textSize="25sp"
+            android:textColor="#7a7a7a"
+            android:textStyle="italic|bold"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:id="@+id/rules"
+            android:text="1. Students of class IX to XII of any Board and Undergraduate students,pursuing their Bachelor degree ONLY are allowed to participate. \n\n2. Pass-outs that is students who have already completed their graduation are strictly NOT allowed to participate. \n\n3. Please make sure you bring your Identity Card (School ID/College ID/Library Card) on the day of the event.\n\n4. On-Spot registration will also be there,but it is a subject to crowd and team space availability.So Teams are advised to register prior to the event in the website.\n\n5. Teams can comprise of students from different institutions(school/college)."
+            android:textIsSelectable="false"
+            android:textColor="#7a7a7a" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="App Quiz Rules:"
+
+            android:layout_below="@+id/rules"
+            android:textSize="25sp"
+            android:textColor="#7a7a7a"
+            android:textStyle="italic|bold"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:id="@+id/apprules"
+            android:text="@string/apprules"
+            android:textIsSelectable="false"
+            android:textColor="#7a7a7a" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/ctext"
+            android:text="© Brainstormer 2015"
+            android:textSize="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:id="@+id/ignored_view"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+    </FrameLayout>
+
+
+
+</RelativeLayout>
+
+
+</ScrollView>

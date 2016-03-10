@@ -1,0 +1,27 @@
+<resources>
+
+    <style name="FullscreenTheme" parent="android:Theme.Holo">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+        <item name="colorPrimary">#FFC107</item>
+        <item name="colorPrimaryDark">#FF9800</item>
+        <item name="colorAccent">#FFC107</item>
+      <!--  <item name="colorPrimary">#FF9800</item>
+        <item name="colorPrimaryDark">#F57C00</item>
+        <item name="colorAccent">#FF9800</item>-->
+      <!--  <item name="textColorTertiary">#212121</item>
+        <item name="primary_light">#FFE0B2</item>
+
+        <item name="secondary_text">#727272</item>
+        <item name="icons">#212121</item>
+        <item name="divider">#B6B6B6</item>-->
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="android:Widget.Holo.ActionBar">
+
+    </style>
+
+</resources>

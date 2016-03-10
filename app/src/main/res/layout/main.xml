@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@android:color/white"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+
+
+        <android.support.v7.widget.Toolbar
+                android:layout_width="fill_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#FFA000"
+                android:id="@+id/layout_top"
+                android:orientation="horizontal">
+
+            <Button
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/ic_drawer"
+                    android:id="@+id/title_bar_left_menu"
+                    android:layout_gravity="left|center_vertical"
+
+                android:gravity="start" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="Brainstormer"
+                    android:textSize="24sp"
+                    android:id="@+id/title"
+                    android:textColor="#fff"
+                    />
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="end"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="end|center_vertical"
+                android:id="@+id/btmaps"
+                android:background="@drawable/ic_maps"
+                />
+        </android.support.v7.widget.Toolbar>
+
+
+
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:id="@+id/main_fragment">
+    </FrameLayout>
+
+</LinearLayout>

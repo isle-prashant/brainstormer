@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:background="#FFECB3"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/errorlayout"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#FFECB3"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#969696"
+                android:id="@+id/msgbx"
+                android:textSize="25dp"
+                android:text="Error Connecting....\nNo Internet Connection"/>
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#727272"
+        android:textColorHint="#969696"
+        android:inputType="textPersonName|textCapWords"
+        android:id="@+id/mname"
+        android:textStyle="italic"
+        android:ems="10"
+        android:hint="NAME"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#727272"
+        android:textColorHint="#969696"
+        android:textSize="20sp"
+        android:id="@+id/mEmail"
+        android:inputType="textEmailAddress"
+        android:textStyle="italic"
+        android:hint="E-MAIL"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#727272"
+        android:textColorHint="#969696"
+        android:id="@+id/mPhone"
+        android:inputType="phone"
+        android:textStyle="italic"
+        android:hint="PHONE NUMBER(10 Ditgits)"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#727272"
+        android:textColorHint="#969696"
+        android:textSize="20sp"
+        android:id="@+id/mTeam"
+        android:textStyle="italic"
+        android:hint="TEAM NAME"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSTITUTE TYPE:"
+        android:textColor="#727272"
+        android:textColorHint="#969696"
+        android:paddingTop="8dp"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        />
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:layout_gravity="left">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SCHOOL"
+            android:textColor="#727272"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:id="@+id/radioSchool" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#727272"
+            android:textStyle="italic"
+            android:text="COLLEGE"
+            android:id="@+id/radioCollege" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mInstitute"
+        android:textColor="#727272"
+        android:textColorHint="#969696"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:hint="INSTITUTE NAME"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:paddingTop="200dp"
+        android:layout_marginTop="25dp"
+        android:layout_height="1.5dp"
+
+        android:background="#fff" />
+
+    <Button
+        android:id="@+id/btreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_horizontal|center_vertical"
+
+        android:textSize="14sp"
+        android:text="Register"
+        android:background="#FFC107"
+        android:textColor="#eee" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/ctext"
+            android:textColor="#727272"
+            android:text="© Brainstormer 2015"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+</LinearLayout>
+
+</RelativeLayout>
+</ScrollView>
