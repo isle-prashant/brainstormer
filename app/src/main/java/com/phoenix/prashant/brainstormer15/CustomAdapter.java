@@ -17,6 +17,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -26,7 +27,7 @@ import java.util.Map;
  */
 
 
- class CustomAdapter extends ArrayAdapter{
+class CustomAdapter extends ArrayAdapter {
 
 
     SharedPreferences marks;
@@ -43,18 +44,18 @@ import java.util.Map;
     private class ViewHolder {
         RadioButton A, B, C, D;
         RadioGroup RG;
-        TextView txtTitle,answer,Qn;
+        TextView txtTitle, answer, Qn;
         int Ans;
         Double marks;
         Button sub;
 
     }
 
-    public View getView( int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder = null;
         final int[] FLAG = new int[1];
         final QuizFragment QF = new QuizFragment();
-        Log.e("pos",""+ position);
+        Log.e("pos", "" + position);
         position %= 10;
         marks = context.getSharedPreferences(QF.filename, 0);
         final RowItem rowItem = QuizFragment.item_arr[position];
@@ -67,7 +68,7 @@ import java.util.Map;
             holder = new ViewHolder();
             holder.txtTitle = (TextView) convertView.findViewById(R.id.Question);
             holder.answer = (TextView) convertView.findViewById(R.id.Answer);
-            holder.Qn= (TextView) convertView.findViewById(R.id.Qn);
+            holder.Qn = (TextView) convertView.findViewById(R.id.Qn);
             holder.Ans = Store.select[position];
 /*            holder.A = (RadioButton) convertView.findViewById(R.id.A1);
             holder.B = (RadioButton) convertView.findViewById(R.id.A2);
@@ -79,20 +80,26 @@ import java.util.Map;
             holder = (ViewHolder) convertView.getTag();
         final int a = Store.getSelect(position);
         holder.txtTitle.setText(rowItem.getTitle());
-        Store.ans[position]= Integer.parseInt(rowItem.getCorrect())+1;
-        holder.Qn.setText(String.valueOf(position+1));
-        switch (a){
-            case 1: holder.answer.setText(rowItem.getOptA());
+        Store.ans[position] = Integer.parseInt(rowItem.getCorrect()) + 1;
+        holder.Qn.setText(String.valueOf(position + 1));
+        switch (a) {
+            case 1:
+                holder.answer.setText(rowItem.getOptA());
                 break;
-            case 2: holder.answer.setText(rowItem.getOptB());
+            case 2:
+                holder.answer.setText(rowItem.getOptB());
                 break;
-            case 3: holder.answer.setText(rowItem.getOptC());
+            case 3:
+                holder.answer.setText(rowItem.getOptC());
                 break;
-            case 4: holder.answer.setText(rowItem.getOptD());
+            case 4:
+                holder.answer.setText(rowItem.getOptD());
                 break;
-            default: holder.answer.setText("none");
+            default:
+                holder.answer.setText("none");
                 break;
         }
+
 
 
 
@@ -222,16 +229,17 @@ import java.util.Map;
             }
 
         });
-       */ return convertView;
+       */
+        return convertView;
 
 
     }
 
-    public View subtitle(int postion){
+    public View subtitle(int postion) {
         LayoutInflater mInflater = (LayoutInflater) context
                 .getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
 
-        View convertView = mInflater.inflate(R.layout.question_listitem,null);
+        View convertView = mInflater.inflate(R.layout.question_listitem, null);
         TextView answer = (TextView) convertView.findViewById(R.id.Answer);
         answer.setText("success");
         return convertView;
